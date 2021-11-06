@@ -255,3 +255,176 @@ ul {
     from { opacity: .4 }
     to { opacity: 1 }
 }
+
+/* SECTION */
+section {
+    padding: 100px 0;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 3px;
+    padding-bottom: 100px;
+}
+
+.title:after {
+    content: "";
+    display: block; 
+    width: 100px;
+    height: 10px;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, royalblue, aquamarine);
+}
+
+/* ABOUT AREA */
+.about-area {
+    height: auto;
+    position: relative;
+}
+
+.about-area > .picture {
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (min-width: 992px) {
+    .about-area > .picture {
+        width: calc(40%  - 40px);
+        display: inline-block;
+    }
+}
+
+.about-area > .picture > img {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 15px;
+}
+
+.about-area > .picture > .name {
+    font-size: 25px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.about-area > .picture > .description {
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.about-area > .text {
+    display: block;
+    padding: 30px;
+}
+
+@media (min-width: 992px) {
+    .about-area > .text {
+        width: calc(60% - 100px);
+        display: inline-block;
+        padding: 0 50px;
+    }
+}
+
+.about-area > .text * {
+    font-size: 16px;
+}
+
+.about-area > .text > .intro {
+    padding: 20px 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.about-area > .text > ul {
+    padding: 20px 0;
+}
+
+.about-area > .text > ul > li {
+    height: 40px;
+}
+
+.about-area > .text > ul > li > .info {
+    color: #777;
+}
+
+.about-area > .text > ul > li > .info > i {
+    color: royalblue;
+}
+
+.about-area > .text > .sns {
+    text-align: right;
+}
+
+@media (min-width: 992px) {
+    .about-area > .text > .sns {
+        text-align: left;
+    }
+}
+
+.about-area > .text > .sns > a {
+    width: 50px;
+    line-height: 50px;
+    background-color: #eee;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.about-area > .text > .sns > a:hover {
+    background-image: linear-gradient(to right, royalblue, aquamarine);
+}
+
+/* SERVICES AREA */
+.skills-area * {
+    font-size: 32px;
+}
+
+.skills-area {
+    height: auto;
+    background-color: #f9f9ff;
+}
+
+.skills-area > .container {
+    text-align: center;
+}
+
+.skills-area > .container > .item {
+    height: auto;
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    text-align: left;
+    transition: all 0.5s ease;
+}
+
+.skills-area > .container > .item:hover {
+    transform: scale(1.015);
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.skills-area > .container > .item > .icon {
+    padding: 10px 0;
+    display: inline-block;
+}
+
+.skills-area > .container > .item > .icon > span > i {
+    font-size: 48px;
+    color: #aaa;
+}
+
+.skills-area > .container > .item > .skill {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.skills-area > .container > .item > .content {
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: 1.5px;
+    padding:10px 0;
+}
