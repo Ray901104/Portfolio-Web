@@ -79,7 +79,7 @@ ul {
     }
 }
 
-.header-area > .navber > .navbar-brand {
+.header-area > .navbar > .navbar-brand {
     display: inline-block;
     position: absolute;
     top: 50%;
