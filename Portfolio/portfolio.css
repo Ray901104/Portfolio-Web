@@ -379,10 +379,6 @@ section {
 }
 
 /* SERVICES AREA */
-.skills-area * {
-    font-size: 32px;
-}
-
 .skills-area {
     height: auto;
     background-color: #f9f9ff;
