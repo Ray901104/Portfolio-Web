@@ -1,21 +1,21 @@
 /* HEADER */
-window.onload = function () { scrollFunction() };
-window.onscroll = function () { scrollFunction() };
+window.onload = function() {scrollFunction()};
+window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     const header = document.getElementById('header');
 
-    if (document.documentElement.scrollTop > 70) {
-        if (!header.classList.contains('navbar-fixed')) {
+    if(document.documentElement.scrollTop > 70){
+        if(!header.classList.contains('navbar-fixed')){
             header.classList.add('navbar-fixed');
             document.getElementsByTagName('body')[0].style.marginTop = '70px';
             header.style.display = 'none';
-            setTimeout(function () {
+            setTimeout(function(){
                 header.style.display = 'block';
             }, 40);
         }
     } else {
-        if (header.classList.contains('navbar-fixed')) {
+        if(header.classList.contains('navbar-fixed')){
             header.classList.remove('navbar-fixed');
             document.getElementsByTagName('body')[0].style.marginTop = '0';
         }
@@ -46,9 +46,9 @@ function plusImageSlides(n) {
     /* 사용자가 화살표버튼을 클릭 시 자동 슬라이드처리 새로 시작 */
     clearInterval(imageTimer);
     imageTimer = setInterval(() => {
-        imageSlideTimer();
+       imageSlideTimer(); 
     }, 3000);
-
+    
     showImageSlides(imageSlideIndex += n);
 }
 
@@ -56,7 +56,7 @@ function currentImageSlide(n) {
     /* 사용자가 특정 dot을 클릭 시 자동 슬라이드처리 새로 시작 */
     clearInterval(imageTimer);
     imageTimer = setInterval(() => {
-        imageSlideTimer();
+       imageSlideTimer(); 
     }, 3000);
 
     showImageSlides(imageSlideIndex = n)
@@ -66,19 +66,19 @@ function showImageSlides(n) {
     const slides = document.getElementsByClassName('image-slide');
     const dots = document.getElementsByClassName('dot');
 
-    if (n > slides.length) {
+    if(n > slides.length) {
         imageSlideIndex = 1;
     }
 
-    if (n < 1) {
+    if(n < 1) {
         imageSlideIndex = slides.length;
     }
 
-    for (let i = 0; i < slides.length; i++) {
+    for(let i = 0; i < slides.length; i++) {
         slides[i].style.display = 'none';
     }
 
-    for (let i = 0; i < dots.length; i++) {
+    for(let i = 0; i < dots.length; i++){
         dots[i].className = dots[i].className.replace(' active', '');
     }
 

@@ -378,7 +378,11 @@ section {
     background-image: linear-gradient(to right, royalblue, aquamarine);
 }
 
-/* SKILLS AREA */
+/* SERVICES AREA */
+.skills-area * {
+    font-size: 32px;
+}
+
 .skills-area {
     height: auto;
     background-color: #f9f9ff;
