@@ -136,7 +136,7 @@ function removeClass(element, name) {
         arr.splice(arr.indexOf(name), 1);
     }
 
-    element.className = arr.join(" ");
+    element.className = arr.join(" "); //split했던 element들을 모두 " "을 기준으로 다시 조인
 }
 
 document.getElementById('all').addEventListener('click', filterSelection.bind(null, 'all'));
