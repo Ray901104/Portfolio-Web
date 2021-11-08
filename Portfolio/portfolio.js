@@ -95,3 +95,85 @@ document.getElementById('firstDot').addEventListener('click', currentImageSlide.
 document.getElementById('secondDot').addEventListener('click', currentImageSlide.bind(null, 2));
 document.getElementById('thirdDot').addEventListener('click', currentImageSlide.bind(null, 3));
 document.getElementById('forthDot').addEventListener('click', currentImageSlide.bind(null, 4));
+
+/* PORTFOLIO AREA */
+filterSelection('all');
+
+// list 아이템 클릭 시 해당 필터에 해당하는 포트폴리오 목록 표시
+function filterSelection(id) {
+    let x = document.getElementsByClassName('listItem');
+    
+    for(let i = 0; i < x.length; i++) {
+        removeClass(x[i], 'active');
+    }
+
+    addClass(document.getElementById(id), 'active');
+
+    x = document.getElementsByClassName('filterItem');
+    
+    if(id == 'all') {
+        id = '';
+    }
+
+    for(let i = 0; i < x.length; i++) {
+        removeClass(x[i], 'show');
+        if(x[i].className.indexOf(id) > -1) {
+            addClass(x[i], 'show');
+        }
+    }
+}
+
+function addClass(element, name) {
+    if(element.className.indexOf(name) == -1) {
+        element.className += " " + name;
+    }
+}
+
+function removeClass(element, name) {
+    let arr = element.className.split(" ");
+
+    while(arr.indexOf(name) > -1) {
+        arr.splice(arr.indexOf(name), 1);
+    }
+
+    element.className = arr.join(" ");
+}
+
+document.getElementById('all').addEventListener('click', filterSelection.bind(null, 'all'));
+document.getElementById('uiux').addEventListener('click', filterSelection.bind(null, 'uiux'));
+document.getElementById('java').addEventListener('click', filterSelection.bind(null, 'java'));
+document.getElementById('db').addEventListener('click', filterSelection.bind(null, 'db'));
+
+function viewPortfolio(event) {
+    let polyNode = event.target;
+
+    if(polyNode.tagName.toLowerCase() == 'i') {
+        polyNode = polyNode.parentNode;
+    }
+
+    const overlayNode = polyNode;
+    const imageNode = overlayNode.nextElementSibling;
+
+    const itemNode = overlayNode.parentNode;
+    const mainNode = itemNode.nextElementSibling;
+    const subNode = mainNode.nextElementSibling;
+    const textNode = subNode.nextElementSibling;
+    
+    document.getElementById('modalImage').src = imageNode.src;
+    document.getElementById('modalMain').innerHTML = mainNode.innerHTML;
+    document.getElementById('modalSub').innerHTML = subNode.innerHTML;
+    document.getElementById('modalText').innerHTML = textNode.innerHTML;
+
+    document.getElementById('portfolioModal').style.display = 'block';
+    
+}
+
+document.getElementById('modalClose').addEventListener('click', function(){
+    document.getElementById('portfolioModal').style.display = 'none';
+})
+
+const filterItems = document.getElementsByClassName('overlay');
+
+for(let i = 0; i < filterItems.length; i++) {
+    filterItems[i].addEventListener('click', viewPortfolio);
+}
