@@ -1,160 +1,170 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 
-        <title>Portfolio</title>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 
-        <!-- saved from url=(0013)about:internet -->
-      
-        <!-- icon -->
-        <script src="https://use.fontawesome.com/363fa13521.js"></script>
-        <script src="https://kit.fontawesome.com/93c29c157d.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
 
-        <!-- fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <!-- saved from url=(0013)about:internet -->
 
-        <!-- user style -->
-        <link rel="stylesheet" href="portfolio.css">
+    <!-- icon -->
+    <script src="https://use.fontawesome.com/363fa13521.js"></script>
+    <script src="https://kit.fontawesome.com/93c29c157d.js" crossorigin="anonymous"></script>
 
-    </head>
-    <body>
-        
-        <!-- header -->
-        <header class="header-area navbar-fade" id="header">
-            <nav class="navbar">
-                <a class="navbar-brand" id="navbarBrand">RAY's Portfolio</a>
-                <a class="navbar-toggler" id="toggleBtn"><i class="fa fa-bars"></i></a>
-                <div class="navbar-menu" id="menu">
-                    <div class="nav-item"><a class="nav-link" id="navbarAbout">about</a></div>
-                    <div class="nav-item"><a class="nav-link" id="navbarService">skill</a></div>
-                    <div class="nav-item"><a class="nav-link" id="navbarPortfolio">portfolio</a></div>
-                    <div class="nav-item"><a class="nav-link" id="navbarReview">review</a></div>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Noto+Sans+KR:wght@500&display=swap"
+        rel="stylesheet">
+
+    <!-- user style -->
+    <link rel="stylesheet" href="portfolio.css">
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="header-area navbar-fade" id="header">
+        <nav class="navbar">
+            <a class="navbar-brand" id="navbarBrand">RAY's Portfolio</a>
+            <a class="navbar-toggler" id="toggleBtn"><i class="fa fa-bars"></i></a>
+            <div class="navbar-menu" id="menu">
+                <div class="nav-item"><a class="nav-link" id="navbarAbout">about</a></div>
+                <div class="nav-item"><a class="nav-link" id="navbarService">skill</a></div>
+                <div class="nav-item"><a class="nav-link" id="navbarPortfolio">portfolio</a></div>
+                <div class="nav-item"><a class="nav-link" id="navbarReview">review</a></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- image slider -->
+    <div class="section-container">
+        <div class="welcome-area">
+            <div class="container">
+                <div class="image-slide fade">
+                    <img src="img/laptop-2557468_1920.jpg">
                 </div>
-            </nav>
-        </header>
-        
-        <!-- image slider -->
-        <div class="section-container">
-            <div class="welcome-area">
-                <div class="container">
-                    <div class="image-slide fade">
-                        <img src="img/laptop-2557468_1920.jpg">
-                    </div>
-                    <div class="image-slide fade">
-                        <img src="img/computer-1828603_1920.jpg">
-                    </div>
-                    <div class="image-slide fade">
-                        <img src="img/laptop-2588606_1920.jpg">
-                    </div>
-                    <div class="image-slide fade">
-                        <img src="img/hacker-1569744_1920.jpg">
-                    </div>
-                    
-                    <!-- 이전 화살표, 다음 화살표 -->
-                    <a class="image-prev" id="imagePrev">&#10094;</a>
-                    <a class="image-next" id="imageNext">&#10095;</a>
+                <div class="image-slide fade">
+                    <img src="img/computer-1828603_1920.jpg">
+                </div>
+                <div class="image-slide fade">
+                    <img src="img/laptop-2588606_1920.jpg">
+                </div>
+                <div class="image-slide fade">
+                    <img src="img/hacker-1569744_1920.jpg">
+                </div>
 
-                    <div class="dots">
-                        <span class="dot" id="firstDot"></span>
-                        <span class="dot" id="secondDot"></span>
-                        <span class="dot" id="thirdDot"></span>
-                        <span class="dot" id="forthDot"></span>
+                <!-- 이전 화살표, 다음 화살표 -->
+                <a class="image-prev" id="imagePrev">&#10094;</a>
+                <a class="image-next" id="imageNext">&#10095;</a>
+
+                <div class="dots">
+                    <span class="dot" id="firstDot"></span>
+                    <span class="dot" id="secondDot"></span>
+                    <span class="dot" id="thirdDot"></span>
+                    <span class="dot" id="forthDot"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ABOUT SECTION -->
+        <section class="about-area" id="about">
+            <div class="title">
+                ABOUT
+            </div>
+            <div class="picture">
+                <img src="img/KakaoTalk_20211106_210733316.jpg">
+                <div class="name">YOUNGRAE CHO(RAY)</div>
+                <div class="description">JUNIOR DEVELOPER</div>
+            </div>
+            <div class="text">
+                <div class="intro">
+                    안녕하세요, 성장하기 위해 배움을 놓지않는, 열정가득한 주니어 개발자 조영래입니다. 새로운 것을 배우기를 즐기는 편이어서, 앞으로 개발자로서 신기술을
+                    끊임없이 공부하며 발전해나갈 계획입니다.
+                </div>
+                <ul>
+                    <li>
+                        <div class="info">
+                            <i class="fa fa-calendar"></i> 4th November, 1990
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info">
+                            <i class="fa fa-phone"></i> +82 10-3946-2124
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info">
+                            <i class="fa fa-envelope"></i> ip323@naver.com
+                        </div class="info">
+                    </li>
+                    <li>
+                        <div class="info">
+                            <i class="fa fa-home"></i> 83, Munjeong-ro, Songpa-gu, Seoul, Republic of Korea
+                        </div>
+                    </li>
+                </ul>
+                <div class="sns">
+                    <a>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a>
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                    <a>
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </a>
+                    <a>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section class="skills-area" id="skill">
+            <div class="title">
+                SKILLS
+            </div>
+            <div class="container">
+                <div class="item">
+                    <div class="icon"><span><i class="fab fa-js-square"></i></span></div>
+                    <div class="skill">JAVASCRIPT</div>
+                    <div class="content">자바스크립트는 객체 기반의 스크립트 프로그래밍 언어입니다. 이 언어는 웹 브라우저 내에서 주로 사용하며, 다른 응용 프로그램의 내장 객체에도
+                        접근할 수 있는 기능을 가지고 있습니다. 또한 Node.js와 같은 런타임 환경과 같이 서버 사이드 네트워크 프로그래밍에도 사용되고 있습니다. 저는 이러한 자바스크립트를
+                        이용하여 웹페이지를 개발하고 있습니다.</div>
+                </div>
+                <div class="item">
+                    <div class="icon"><span><i class="fab fa-java"></i></span></div>
+                    <div class="skill">JAVA</div>
+                    <div class="content">자바는 썬 마이크로시스템즈의 제임스 고슬링(James Gosling)과 다른 연구원들이 개발한 객체 지향적 프로그래밍 언어입니다. 현재 웹
+                        애플리케이션 개발에 가장 많이 사용하는 언어 가운데 하나이고, 모바일 기기용 소프트웨어 개발에도 널리 사용하고 있습니다. 제가 수료한 개발자 양성과정에서 메인으로 학습한 언어 중 하나로, 자바를 이용하여 웹서버를 개발하고 있습니다.</div>
+                </div>
+                <div class="item">
+                    <div class="icon"><span><i class="fab fa-vuejs"></i></span></div>
+                    <div class="skill">VUE.js</div>
+                    <div class="content">Vue.js는 2014년에 릴리즈된 이후에 지속적으로 발전하고 있는 자바스크립트 프레임워크입니다. 현재 제가 실무에서 도입하기 시작한 프레임워크로, 꾸준한 학습과 실습을 통해 실력을 향상시킬 계획입니다.</div>
+                </div>
+                <div class="item">
+                    <div class="icon"><span><i class="fas fa-database"></i></span></div>
+                    <div class="skill">DATABASE</div>
+                    <div class="content">데이터베이스란 여러 사람이 공유하고 사용할 목적으로 통합 관리되는 정보의 집합입니다. 논리적으로 연관된 하나 이상의 자료의 모음으로 그 내용을
+                        고도로 구조화함으로써 검색과 갱신의 효율화를 꾀한 것입니다. 데이터베이스에는 다양한 솔루션들이 존재하는데 저는 그 중에서도 Oracle을 사용합니다.
                     </div>
                 </div>
             </div>
-            
-            <!-- ABOUT SECTION -->
-            <section class="about-area" id="about">
-                <div class="title">
-                    ABOUT
-                </div>
-                <div class="picture">
-                    <img src="img/KakaoTalk_20211106_210733316.jpg">
-                    <div class="name">YOUNGRAE CHO(RAY)</div>
-                    <div class="description">JUNIOR DEVELOPER</div>
-                </div>
-                <div class="text">
-                    <div class="intro">
-                        안녕하세요, 성장하기 위해 배움을 놓지않는, 열정가득한 주니어 개발자 조영래입니다. 새로운 것을 배우기를 즐기는 편이어서, 앞으로 개발자로서 신기술을
-                        끊임없이 공부하며 발전해나갈 계획입니다.
-                    </div>
-                    <ul>
-                        <li>
-                            <div class="info">
-                                <i class="fa fa-calendar"></i> 4th November, 1990
-                            </div>
-                        </li>
-                        <li>
-                            <div class="info">
-                                <i class="fa fa-phone"></i> +82 10-3946-2124
-                            </div>
-                        </li>
-                        <li>
-                            <div class="info">
-                                <i class="fa fa-envelope"></i> ip323@naver.com
-                            </div class="info">
-                        </li>
-                        <li>
-                            <div class="info">
-                                <i class="fa fa-home"></i> 05794, Moonjung-ro, Songpa-gu, Seoul, Republic of Korea
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="sns">
-                        <a>
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                        </a>
-                        <a>
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                        </a>
-                        <a>
-                            <i class="fa fa-linkedin" aria-hidden="true"></i>
-                        </a>
-                        <a>
-                            <i class="fa fa-google-plus" aria-hidden="true"></i>
-                        </a>
-                        <a>
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </div>
-            </section>
+        </section>
 
-            <!-- SKILLS SECTION -->
-            <section class="skills-area" id="skill">
-                <div class="title">
-                    SKILLS
-                </div>
-                <div class="container">
-                    <div class="item">
-                        <div class="icon"><span><i class="fab fa-js-square"></i></span></div>
-                        <div class="skill">JAVASCRIPT</div>
-                        <div class="content">자바스크립트는 객체 기반의 스크립트 프로그래밍 언어입니다. 이 언어는 웹 브라우저 내에서 주로 사용하며, 다른 응용 프로그램의 내장 객체에도 접근할 수 있는 기능을 가지고 있습니다. 또한 Node.js와 같은 런타임 환경과 같이 서버 사이드 네트워크 프로그래밍에도 사용되고 있습니다. 저는 이러한 자바스크립트를 이용하여 웹페이지를 개발하고 있습니다.</div>
-                    </div>
-                    <div class="item">
-                        <div class="icon"><span><i class="fab fa-java"></i></span></div>
-                        <div class="skill">JAVA</div>
-                        <div class="content">자바는 썬 마이크로시스템즈의 제임스 고슬링(James Gosling)과 다른 연구원들이 개발한 객체 지향적 프로그래밍 언어입니다. 현재 웹 애플리케이션 개발에 가장 많이 사용하는 언어 가운데 하나이고, 모바일 기기용 소프트웨어 개발에도 널리 사용하고 있습니다. 현재 버전 10까지 출시되었습니다. 저는 이러한 자바를 이용하여 웹 서버 개발을 하고 있습니다.</div>
-                    </div>
-                    <div class="item">
-                        <div class="icon"><span><i class="fab fa-vuejs"></i></span></div>
-                        <div class="skill">VUE.js</div>
-                        <div class="content">Vue.js는 뷰입니다.</div>
-                    </div>
-                    <div class="item">
-                        <div class="icon"><span><i class="fas fa-database"></i></span></div>
-                        <div class="skill">DATABASE</div>
-                        <div class="content">데이터베이스란 여러 사람이 공유하고 사용할 목적으로 통합 관리되는 정보의 집합입니다. 논리적으로 연관된 하나 이상의 자료의 모음으로 그 내용을 고도로 구조화함으로써 검색과 갱신의 효율화를 꾀한 것입니다. 즉, 몇 개의 자료 파일을 조직적으로 통합하여 자료 항목의 중복을 없애고 자료를 구조화하여 기억시켜 놓은 자료의 집합체라고 할 수 있습니다. 이러한 데이터베이스에는 다양한 솔루션들이 존재하는데 저는 그 중에서도 Oracle, MySql, MariaDB를 사용합니다. 저는 이러한 솔루션을 이용하여 웹 시스템의 데이터베이스를 구축하는 일을 하고 있습니다.</div>
-                    </div>
-                </div>
-            </section>
+    </div>
 
-        </div>
-            
-            <!-- user script -->
-            <script src="portfolio.js"></script>
-        </body>
-        </html>
+    <!-- user script -->
+    <script src="portfolio.js"></script>
+</body>
+
+</html>
